@@ -152,10 +152,11 @@ interface QuoteStorageStrategyPluginInterface
     /**
      * Specification:
      *  - Reloads all items in cart as new, it recreates all items transfer, reads new prices, options, bundles.
+     *  - From next major version (Forward Compatibility): Returns `QuoteResponseTransfer`.
      *
      * @api
      *
-     * @return void
+     * @return \Generated\Shared\Transfer\QuoteResponseTransfer
      */
     public function reloadItems();
 
